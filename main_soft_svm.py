@@ -27,8 +27,8 @@ if __name__ == "__main__":
     w_b_10 = svm_solve.solver_soft_svm_dual_problem(10)
     w_b_100 = svm_solve.solver_soft_svm_dual_problem(100)
 
-    # The dataset for Iris-setosa and Iris-versicolor is linearly separable,
-    # therefore, the result will achieve 100% easily
+    # The dataset (1st and 2nd column) of Iris-versicolor and Iris-virginica is not linearly separable,
+    # therefore, the result do not achieve 100%.
     print("Validating C = 0.1:  {}%".format(svm_solve.validate(x_test, y_test, w_b)))
     print("Validating C = 1:  {}%".format(svm_solve.validate(x_test, y_test, w_b_1)))
     print("Validating C = 10:  {}%".format(svm_solve.validate(x_test, y_test, w_b_10)))
