@@ -47,7 +47,7 @@ if __name__ == "__main__":
     dc_10 = [line_c(d1[0], w_b_10), line_c(d1[1], w_b_10)]
     dc_100 = [line_c(d1[0], w_b_100), line_c(d1[1], w_b_100)]
 
-    plt.plot(x0, x1, 'go', label='Setosa')
+    plt.plot(x0, x1, 'go', label='versicolor')
     plt.plot(y0, y1, 'r^', label='Virginica')
     plt.plot(d1, dc, 'b-', label='C = 0.1')
     plt.plot(d1, dc_1, 'y-', label='C = 1')
